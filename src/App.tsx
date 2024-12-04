@@ -1,11 +1,11 @@
-import "./App.css";
+import Stacker from "./components/Stacker";
+import { cardData } from "./utils/data";
 
 function App() {
 
   return (
-    <div>
-      {/* https://www.youtube.com/watch?v=F1rWdCDEixs&ab_channel=HankTheTank @ 1:15 */}
-      react - tailwind - typescript- flash cards
+    <div className="w-screen h-screen overflow-hidden bg-black flex items-center justify-center">
+      <Stacker data={cardData} />
     </div>
   );
 }
